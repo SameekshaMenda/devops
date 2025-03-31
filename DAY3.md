@@ -2,10 +2,10 @@
 whenever we want to create cloud resources like EC2, subnet, internet gateway,loadbalancer, database servers, or any resources u want to create by using automation or script, we use teraform
 teraform --> widely used in  companies
 
-- step 1:
+Step 1:
  -install teraform on ur windows machine
 
-- step 2:
+Step 2:
  - set terraform path on Windows machine
  - ![image](https://github.com/user-attachments/assets/c09d2a33-0893-4bf7-9018-239da2b23085)
 
@@ -15,12 +15,12 @@ teraform --> widely used in  companies
 - add path to environmental variable
 
 
-- step 3:
+Step 3:
  - Configure AWS credentials from CLI (command line interface)
  - install AWS CLI
  - https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
- - ![image](https://github.com/user-attachments/assets/e260f4ab-7091-49b1-97e7-50005cc3bdf6)
- - ![image](https://github.com/user-attachments/assets/5ab5dcd7-560d-423a-aa02-bd7e7fa5adee)
+ -![image](https://github.com/user-attachments/assets/e260f4ab-7091-49b1-97e7-50005cc3bdf6)
+ -![image](https://github.com/user-attachments/assets/5ab5dcd7-560d-423a-aa02-bd7e7fa5adee)
  - check version --> aws --version
 
 in AWS,
@@ -43,7 +43,7 @@ When u create an instance using terraform scripts, make sure to pass these 5 par
 
 commands:
 ---------
- - terraform init --> will insitialize terraform backend configuration with the cloud api. It is going to generate a license key to authenticate cloud provider 
+ - terraform init --> will initialize terraform backend configuration with the cloud api. It is going to generate a license key to authenticate cloud provider 
    API as well as it is going to create. terraform folder, which contains -> license and neccesary files
  - terraform validate
  - terraform plan   -tells what u plan to do in the cloud
