@@ -32,10 +32,10 @@ kubernetes features:
 
 2. we hav to install kubectl ekctl, awscli
    ![image](https://github.com/user-attachments/assets/f1dbb659-26a0-4ddb-b82e-29524cc48be4) <br> (copy from here )
-   >> vi cluster.sh (in putty) and right click (if not enter I and right click )
-   >> esc and enter :wq
-   >> chmod 777 cluster.sh
-   >> sh cluster.sh
-   >> sudo su
-   >> ls
-   >> sh cluster.sh (long package download) (output: cluster.sh: 42: source: not found)
+   - vi cluster.sh (in putty) and right click (if not enter I and right click )
+   - esc and enter :wq
+   - chmod 777 cluster.sh
+   - sh cluster.sh
+   - sudo su
+   - ls
+   - sh cluster.sh (long package download) (output: cluster.sh: 42: source: not found)
