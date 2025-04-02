@@ -98,3 +98,38 @@ every microservice works in diff port number
 
 host port number ---> is a user choice , we can give any port number of any choice , this port humber shows how to access application from the server
 port number ---
+
+
+
+dimple repository-fork-then master branch code copy then clone in powershell using-git clone -b master https://github.com/Sinchan08/Dimple-CapsuleProject.git
+then in vs code-open folder-c drive-users-dell folder-dimple project open
+
+As a devops engineer we need to collect environment variables,port numbers,database endpoints
+
+steps while writing docker file:
+1)identify the base image of the application 
+2)create a work directory
+3)copy the dependencies in docker image
+4)install the dependencies
+5)copy whole source code from local machine into docker image
+6)define the expose port number
+7)mention which port we have to run in container
+
+
+server(putty):<br>
+yum install git -y
+1)git clone -b master https://github.com/Sam/Dimple-CapsuleProject.git
+2) ls
+3)cd Dimple-CapsuleProject
+4)docker build -t web-app-nodejs:1.0 .
+5)docker images
+6) docker inspect web-app-nodejs:1.0- inorder to know which images are there
+7) docker run -td --name node-app -p 3015:3015 web-app-nodejs:1.0
+8)then copy the public url and paste in new tab-http://51.44.97.180:3015/
+9) docker run -td --name node-app -p 3015:3015 web-app-nodejs:1.0
+
+
+
+
+1)create a website using chatgpt and write a docker file for that application and deploy in enginx server
+2)identify the problems with containers
