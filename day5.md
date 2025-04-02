@@ -51,6 +51,7 @@ Kubernetes features:
      - eksctl
      - clear
      - eksctl create cluster --name sameeksha-cluster --version 1.31 --region ap-south-1 --nodegroup-name test-linux --node-type t2.micro --nodes 3 --nodes-min 3 --nodes-max 5 --managed  (to create cluster)
+     - 
    
      - ![image](https://github.com/user-attachments/assets/a757acfc-6553-4bc3-a028-1eec04b04051)
 
@@ -85,9 +86,28 @@ Cluster
   - on premises - we hav to manage this cluster by ourselves, if something goess wrong in application downtime , we r responsible for that
   - cloud manage clusters - this cluster is managed by the cloud providers , if something goess wrong , they are responsible for our application
   - in aws , if u want to create a cluster , we hav a service called EKS (elastic kubernetes service)
+
+ in putty:
  
   - snap install kubectl --classic
   - aws eks update-kubeconfig --name sameeksha-cluster --region ap-south-1
+  - kubectl get nodes (to get list of nodes)(there should be 3 since we mentioned earlier as 3)
 
-     
+     when u create pod file , 4 things are imp:
+    1. API version - defines the schema representation of the object
+    2. kind - defines what kind of object u are creating
+    3. Meta-data - defines name of the object (if u want to assign labels we need to define meta data)
+    4. spec - defines behaviour of the object
+   
+    1 cpu = 100 milliqoates
+    1gb = 1024 megabytes
+
+in putty:
+
+- git clone https://github.com/SameekshaMenda/sameeksha-k8s-manifests.git
+- ls
+- cd sameeksha-k8s-manifests
+- kubectl apply -f pod.yaml
+- kubectl get pods
+-  kubectl get pods -o wide
 
