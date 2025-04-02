@@ -30,7 +30,7 @@ kubernetes features:
 
 1. Create a jump server or bastion host  (create instance using ubuntu) (sameeksha-bastianhost)
 
-2. we hav to install kubectl ekctl, awscli
+2. we hav to Install EKSCTL,Kubectl,AWS CLI.sh
    ![image](https://github.com/user-attachments/assets/f1dbb659-26a0-4ddb-b82e-29524cc48be4) <br> (copy from here )
    - vi cluster.sh (in putty) and right click (if not enter I and right click )
    - esc and enter :wq
