@@ -15,4 +15,14 @@ containers will not support the auto-screening
 to overcome the problems we are moving towards to war orchestration tool
 <br>
 what us kubernetes??
-...kubernetes is a container management tool, it is going to manage all the containers
++ kubernetes is a container management tool, it is going to manage all the containers
++ kubernetes performs the automatic deployment of the application
+
+kubernetes features:
+---------------------
++ orchestration
++ auto-scaling
++ load balancing
++ self healing
++ it is platform independent - can run on any cloud
++ to perform the automation kubernetes , we write manifested (aml) file
