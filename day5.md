@@ -3,34 +3,34 @@ Problem with the Container:
 containers will not support the auto-screening
 ```
 - scale up - whenever profit increase, we hav to increase the number of servers
-     - vertical scaling - u hav to increase the system resources
+     Vertical scaling - u have to increase the system resources
      - horizontal auto-scaling  - we hav to add additional server to existing infrastructure
 ```
 ```
-- scale down - whenever traffic goes down , we hav remove the additional servers
+- scale down - whenever traffic goes down, we have to  remove the additional servers
              - containers will not support load balancing
-             - if the container is down , we are going to get application downtime so we hav to with containers\
-             - containers will not support self healing process.
+             - If the container is down, we are going to get application downtime, so we have to go with containers
+             - containers will not support the self-healing process.
 ```
-to overcome the problems we are moving towards to war orchestration tool
+To overcome the problems we are moving towards a war orchestration tool
 <br>
-what us kubernetes??
-+ kubernetes is a container management tool, it is going to manage all the containers
-+ kubernetes performs the automatic deployment of the application
+what us Kubernetes??
++ Kubernetes is a container management tool; it is going to manage all the containers
++ Kubernetes performs the automatic deployment of the application
 
-kubernetes features:
+Kubernetes features:
 ---------------------
 + orchestration
 + auto-scaling
 + load balancing
 + self healing
-+ it is platform independent - can run on any cloud
-+ to perform the automation kubernetes , we write manifested (aml) file
++ it is platform-independent - can run on any cloud
++ To perform the automation kubernetes, we write a manifested (aml) file
 
 
 1. Create a jump server or bastion host  (create instance using ubuntu) (sameeksha-bastianhost)
 
-2. we hav to Install EKSCTL,Kubectl,AWS CLI.sh
+2. We have to install EKSCTL, Kubectl, AWS CLI.sh
    ![image](https://github.com/user-attachments/assets/f1dbb659-26a0-4ddb-b82e-29524cc48be4) <br> (copy from here )
    - vi cluster.sh (in putty) and right click (if not enter I and right click )
    - esc and enter :wq
@@ -54,6 +54,14 @@ kubernetes features:
    
      - ![image](https://github.com/user-attachments/assets/a757acfc-6553-4bc3-a028-1eec04b04051)
 
+Cluster
+=======
+- kubernetes will manage the application in a cluster
+- what is cluster??
+- it is group of nodes , it contains master node and worker node
+  master node
+   -----------
+  - it is the hero of the cluster which is going yo take of the cluster head
 
      
 
