@@ -15,4 +15,4 @@ containers will not support the auto-screening
 to overcome the problems we are moving towards to war orchestration tool
 <br>
 what us kubernetes??
-... kubernetes is a container management tool, it is going to manage all the containers
+...kubernetes is a container management tool, it is going to manage all the containers
