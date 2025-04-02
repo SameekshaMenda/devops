@@ -50,6 +50,9 @@ kubernetes features:
      - eksctl
      - clear
      - eksctl create cluster --name sameeksha-cluster --version 1.31 --region ap-south-1 --nodegroup-name test-linux --node-type t2.micro --nodes 3 --nodes-min 3 --nodes-max 5 --managed  (to create cluster)
+   
+     - ![image](https://github.com/user-attachments/assets/a757acfc-6553-4bc3-a028-1eec04b04051)
+
 
      
 
