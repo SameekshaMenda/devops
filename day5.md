@@ -26,3 +26,10 @@ kubernetes features:
 + self healing
 + it is platform independent - can run on any cloud
 + to perform the automation kubernetes , we write manifested (aml) file
+
+
+1. Create a jump server or bastion host  (create instance using ubuntu) (sameeksha-bastianhost)
+
+2. we hav to install kubectl ekctl, awscli
+- ![image](https://github.com/user-attachments/assets/f1dbb659-26a0-4ddb-b82e-29524cc48be4) <br> (copy from here )
+  >> vi cluster.sh (in putty) and right click (if not enter I and right click )
