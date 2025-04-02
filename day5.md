@@ -39,3 +39,17 @@ kubernetes features:
    - sudo su
    - ls
    - sh cluster.sh (long package download) (output: cluster.sh: 42: source: not found)
+   - now in aws --> search for IAM and select users from the sidebar --> create user --> sameeksha-k8s -->next -->3rd block & 2nd option administrativeaccess --> create user --> cliateck on sameeksha-k8s -->security credential --> create access key -->user key - keep it blank --> next and download csv file
+
+     ![image](https://github.com/user-attachments/assets/be8f6a57-e0c6-485f-bb64-cd212bec3ef4)
+  - copy access key other from here
+     ![image](https://github.com/user-attachments/assets/803d06cd-787f-42de-80e3-2c96c7972019)
+     ![image](https://github.com/user-attachments/assets/ef2754d6-0a68-4c75-964f-f279df0c8129)
+
+     in putty
+     - eksctl
+     - clear
+     - eksctl create cluster --name sameeksha-cluster --version 1.31 --region ap-south-1 --nodegroup-name test-linux --node-type t2.micro --nodes 3 --nodes-min 3 --nodes-max 5 --managed  (to create cluster)
+
+     
+
