@@ -12,9 +12,9 @@ containers will not support the auto-screening
              - If the container is down, we are going to get application downtime, so we have to go with containers
              - containers will not support the self-healing process.
 ```
-To overcome the problems we are moving towards a war orchestration tool
+To overcome the problems, we are moving towards a war orchestration tool
 <br>
-what us Kubernetes??
+What is Kubernetes??
 + Kubernetes is a container management tool; it is going to manage all the containers
 + Kubernetes performs the automatic deployment of the application
 
@@ -24,7 +24,7 @@ Kubernetes features:
 + auto-scaling
 + load balancing
 + self healing
-+ it is platform-independent - can run on any cloud
++ It is platform-independent - it can run on any cloud
 + To perform the automation kubernetes, we write a manifested (aml) file
 
 
@@ -56,12 +56,38 @@ Kubernetes features:
 
 Cluster
 =======
-- kubernetes will manage the application in a cluster
-- what is cluster??
-- it is group of nodes , it contains master node and worker node
-  master node
+- Kubernetes will manage the application in a cluster
+- What is cluster??
+- It is a group of nodes; it contains a master node and a worker node.
+  
+   The master node
    -----------
-  - it is the hero of the cluster which is going yo take of the cluster head
+  - it is the hero of the cluster which is going to take care of the cluster head
+  - is responsible for the overall health of the cluster
+  - we hav 4 components in master node ,
+    1. API server - it is a hero of the server , whenever u want to perform load balancing,auto-scaling it plays a crucial role.
+    2. ETCD - it is a distributed DB where ur going to store all the details abt the cluster, application info inside the etcd
+    3. controlller - n is responsible for monitoring health of the application , it is always checked  desired status = actual status
+    4. scheduler - it is component which is going to schedule a pod in a node.
+    <br>
+    **NOTE:** pod - in k8s , it will run the application in a pod, which contains containers, which containers docker image, it is the smallest deployable unit in  the kubernetes.
+  
+    The worker node
+     -----------
+  - it is where u deploy a server running on the cluster
+  - worker node components:
+    1. kubelet - this components exists inside worker node, it is responsible for creating pods, which is going to act as agent, if something goes wrong then it communicates to the master node.
+    2. Container runtime - it is like a docker, it is responible for pulling the docker image, creating container, starting the container, it is responsible for managing the container lifecycle.
+    3. kube-proxy - it is a networking component in the worker node, it is responsible for creating deployments, exposing application over the internet
+ 
+  - in a cluster we should atleast 1 master node and worker node.
+  - there are 2 types :
+  - on premises - we hav to manage this cluster by ourselves, if something goess wrong in application downtime , we r responsible for that
+  - cloud manage clusters - this cluster is managed by the cloud providers , if something goess wrong , they are responsible for our application
+  - in aws , if u want to create a cluster , we hav a service called EKS (elastic kubernetes service)
+ 
+  - snap install kubectl --classic
+  - aws eks update-kubeconfig --name sameeksha-cluster --region ap-south-1
 
      
 
