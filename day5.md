@@ -72,8 +72,8 @@ Cluster
     <br>
     **NOTE:** pod - in k8s , it will run the application in a pod, which contains containers, which containers docker image, it is the smallest deployable unit in  the kubernetes.
   
-    The worker node
-     -----------
+   The worker node
+   -----------
   - it is where u deploy a server running on the cluster
   - worker node components:
     1. kubelet - this components exists inside worker node, it is responsible for creating pods, which is going to act as agent, if something goes wrong then it communicates to the master node.
