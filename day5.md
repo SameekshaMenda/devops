@@ -102,6 +102,14 @@ Cluster
     1 cpu = 100 milliqoates
     1gb = 1024 megabytes
 
+    
+in vscode :
+
+1. create a folder called sameeksha-k8s-maifests
+2. create pod.yaml and write code
+3. open terminal and enter  " git add . ; git commit -m "my first yaml file" " and publish as public
+
+   
 in putty:
 
 - git clone https://github.com/SameekshaMenda/sameeksha-k8s-manifests.git
@@ -110,4 +118,6 @@ in putty:
 - kubectl apply -f pod.yaml
 - kubectl get pods
 -  kubectl get pods -o wide
+-  kubectl describe pod sample-pod
+
 
