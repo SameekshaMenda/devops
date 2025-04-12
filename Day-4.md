@@ -1,4 +1,4 @@
--------------------------------Docker------------------------------------------
+# Docker
 create instance in aws
 open that in putty with changes in ssh and connection(make it 60)
 
