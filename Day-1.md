@@ -10,7 +10,7 @@ A **Pipeline** is a set of steps (scripted) that Jenkins runs to automate softwa
 
 ---
 
-##  Types of Pipelines
+## Types of Pipelines
 
 | Type         | Description                         |
 |--------------|-------------------------------------|
