@@ -1,3 +1,4 @@
+# Terraform 
 ![image](https://github.com/user-attachments/assets/64c93d88-8a0a-49ad-8590-e9d0689e0428)tereform script --> to avoid doing the same job again and again
 whenever we want to create cloud resources like EC2, subnet, internet gateway,loadbalancer, database servers, or any resources u want to create by using automation or script, we use teraform
 teraform --> widely used in  companies
